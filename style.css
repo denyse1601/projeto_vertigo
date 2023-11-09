@@ -10,7 +10,7 @@
     --gray-680: #475569;
     --gray-400: #94a3b8;
     --gray-200: #e2e8f0;
-    --light-purple:#9f67ff;
+    --light-purple: #9f67ff;
     --purple: #7c3aed;
     --white: #fff;
 }
@@ -130,7 +130,11 @@ main {
 @media (min-width: 1000px) {
     body {
         display: flex;
+        height: 100vh;
+        border: 1px solid red;
+
     }
+
     header {
         background: none;
         justify-content: flex-start;
@@ -145,7 +149,7 @@ main {
 
     main {
         margin-inline: 7rem;
-        max-width:24rem ;
+        max-width: 24rem;
         padding: 0;
     }
 
@@ -156,9 +160,15 @@ main {
         align-items: center;
     }
 
-    .bg-desktop{
+    .bg-desktop {
         display: block;
         width: 100%;
+    }
+
+    .bg-desktop img {
+        display: block;
+        width: 100%;
+        height: 100%;
     }
 
     .descricao h1 {
